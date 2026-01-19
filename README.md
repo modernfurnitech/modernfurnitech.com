@@ -1,43 +1,134 @@
-# modernfurnitech.github.io<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Modern Furnitech Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 50px;
-  padding: 12px 18px;
-  font-size: 16px;
-  text-decoration: none;
-  font-weight: bold;
-  z-index: 999;
-}
-.whatsapp-float:hover {
-  background-color: #1ebe5d;
-}>
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0f0f0f;color:#fff}
-    header{background:#000;padding:20px 40px;display:flex;justify-content:space-between;align-items:center}
-    header h1{margin:0;font-size:26px;letter-spacing:1px}
-    header span{color:#caa24d}
-    .hero{padding:80px 40px;text-align:center;background:linear-gradient(to right,#000,#1a1a1a)}
-    .hero h2{font-size:40px;margin-bottom:10px}
-    .hero p{font-size:18px;color:#ccc}
-    .btn{display:inline-block;margin-top:25px;padding:12px 30px;background:#caa24d;color:#000;text-decoration:none;font-weight:bold;border-radius:4px}
-    section{padding:60px 40px;max-width:1200px;margin:auto}
-    h3{text-align:center;font-size:32px;margin-bottom:40px}
-    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
-    .card{background:#1a1a1a;padding:25px;border-radius:8px;text-align:center}
-    .card h4{margin-top:0;color:#caa24d}
-    .why{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
-    footer{background:#000;padding:30px;text-align:center;color:#aaa}
-    .contact{font-size:18px}
+
+  <!-- Font Awesome for WhatsApp Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#0f0f0f;
+      color:#fff;
+    }
+
+    header{
+      background:#000;
+      padding:20px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      margin:0;
+      font-size:26px;
+      letter-spacing:1px;
+    }
+
+    header span{
+      color:#caa24d;
+    }
+
+    .hero{
+      padding:80px 40px;
+      text-align:center;
+      background:linear-gradient(to right,#000,#1a1a1a);
+    }
+
+    .hero h2{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    .hero p{
+      font-size:18px;
+      color:#ccc;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:12px 30px;
+      background:#caa24d;
+      color:#000;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:4px;
+    }
+
+    section{
+      padding:60px 40px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    h3{
+      text-align:center;
+      font-size:32px;
+      margin-bottom:40px;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#1a1a1a;
+      padding:25px;
+      border-radius:8px;
+      text-align:center;
+    }
+
+    .card h4{
+      margin-top:0;
+      color:#caa24d;
+    }
+
+    .why{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    footer{
+      background:#000;
+      padding:30px;
+      text-align:center;
+      color:#aaa;
+    }
+
+    .contact{
+      font-size:18px;
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-float{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background-color:#25D366;
+      color:white;
+      border-radius:50px;
+      padding:12px 18px;
+      font-size:16px;
+      text-decoration:none;
+      font-weight:bold;
+      z-index:999;
+    }
+
+    .whatsapp-float:hover{
+      background-color:#1ebe5d;
+    }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -83,7 +174,10 @@
   </div>
 </footer>
 
-</body><a href="https://wa.me/9234736961" class="whatsapp-float" target="_blank">
+<!-- WhatsApp Button -->
+<a href="https://wa.me/919234736961" class="whatsapp-float" target="_blank">
   <i class="fa fa-whatsapp"></i> Order via WhatsApp
 </a>
-</html>
+
+</body>
+</html>t
