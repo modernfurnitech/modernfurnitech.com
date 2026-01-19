@@ -5,7 +5,7 @@
   <title>Modern Furnitech Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font Awesome for WhatsApp Icon -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
@@ -24,15 +24,7 @@
       align-items:center;
     }
 
-    header h1{
-      margin:0;
-      font-size:26px;
-      letter-spacing:1px;
-    }
-
-    header span{
-      color:#caa24d;
-    }
+    header span{color:#caa24d;}
 
     .hero{
       padding:80px 40px;
@@ -40,19 +32,12 @@
       background:linear-gradient(to right,#000,#1a1a1a);
     }
 
-    .hero h2{
-      font-size:40px;
-      margin-bottom:10px;
-    }
-
-    .hero p{
-      font-size:18px;
-      color:#ccc;
-    }
+    .hero h2{font-size:40px;}
+    .hero p{color:#ccc;}
 
     .btn{
       display:inline-block;
-      margin-top:25px;
+      margin-top:20px;
       padding:12px 30px;
       background:#caa24d;
       color:#000;
@@ -67,13 +52,9 @@
       margin:auto;
     }
 
-    h3{
-      text-align:center;
-      font-size:32px;
-      margin-bottom:40px;
-    }
+    h3{text-align:center;font-size:32px;margin-bottom:40px;}
 
-    .services{
+    .services,.why{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
       gap:25px;
@@ -86,15 +67,43 @@
       text-align:center;
     }
 
-    .card h4{
-      margin-top:0;
-      color:#caa24d;
+    .card h4{color:#caa24d;}
+
+    /* PRODUCT SECTION */
+    .product-box{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
     }
 
-    .why{
+    .product-gallery{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
+      grid-template-columns:repeat(2,1fr);
+      gap:15px;
+    }
+
+    .product-gallery img{
+      width:100%;
+      border-radius:8px;
+    }
+
+    .price{
+      font-size:28px;
+      color:#caa24d;
+      margin-bottom:15px;
+    }
+
+    .product-details ul{
+      list-style:none;
+      padding:0;
+      font-size:18px;
+    }
+
+    .product-details li{margin-bottom:10px;}
+
+    .note{
+      color:#ccc;
+      margin-top:15px;
     }
 
     footer{
@@ -104,27 +113,21 @@
       color:#aaa;
     }
 
-    .contact{
-      font-size:18px;
-    }
-
-    /* WhatsApp Floating Button */
     .whatsapp-float{
       position:fixed;
       bottom:20px;
       right:20px;
-      background-color:#25D366;
-      color:white;
+      background:#25D366;
+      color:#fff;
       border-radius:50px;
       padding:12px 18px;
-      font-size:16px;
       text-decoration:none;
       font-weight:bold;
       z-index:999;
     }
 
-    .whatsapp-float:hover{
-      background-color:#1ebe5d;
+    @media(max-width:768px){
+      .product-box{grid-template-columns:1fr;}
     }
   </style>
 </head>
@@ -156,6 +159,42 @@
   </div>
 </section>
 
+<!-- SOFA PRODUCT SECTION -->
+<section>
+  <h3>Our Products</h3>
+
+  <div class="product-box">
+    <div class="product-gallery">
+      <img src="sofa1.jpg">
+      <img src="sofa2.jpg">
+      <img src="sofa3.jpg">
+      <img src="sofa4.jpg">
+    </div>
+
+    <div class="product-details">
+      <h4 class="price">₹ 33,333 /-</h4>
+
+      <ul>
+        <li><b>Fabric:</b> Velvet (Mousa)</li>
+        <li><b>Frame Material:</b> Liptus Wood + Plywood</li>
+        <li><b>Seating Capacity:</b> 8 Seater</li>
+        <li><b>Foam:</b> Harmony HR Foam</li>
+        <li><b>Delivery:</b> Free of Cost</li>
+      </ul>
+
+      <p class="note">
+        <b>Note:</b> You can customize size and design.  
+        Choose any colour or fabric material.
+      </p>
+
+      <a href="https://wa.me/919234736961?text=I%20want%20to%20order%208%20Seater%20Luxury%20Sofa" 
+         class="btn" target="_blank">
+        Order on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
 <section>
   <h3>Why Choose Us</h3>
   <div class="why">
@@ -167,17 +206,14 @@
 </section>
 
 <footer>
-  <div class="contact">
-    📍 Gopalganj <br>
-    📞 9234736961 <br><br>
-    © 2026 Modern Furnitech Solutions
-  </div>
+  📍 Gopalganj <br>
+  📞 9234736961 <br><br>
+  © 2026 Modern Furnitech Solutions
 </footer>
 
-<!-- WhatsApp Button -->
 <a href="https://wa.me/919234736961" class="whatsapp-float" target="_blank">
   <i class="fa fa-whatsapp"></i> Order via WhatsApp
 </a>
 
 </body>
-</html>t
+</html>
